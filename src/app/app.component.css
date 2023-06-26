@@ -22,13 +22,20 @@
     color:#d61d64 ;
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (min-width:320px) and (max-width:768px){
     .col-4,.col-8{
         width: 100%;
         display: block;
     }
     .col-8 h1{
         width: 60%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .col-8 h1{
+        width: 70%;
         font-size: 20px;
     }
 }

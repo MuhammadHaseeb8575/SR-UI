@@ -100,9 +100,23 @@ nav .fa-bars:hover{
     display: block;
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (min-width:320px) and (max-width:768px){
+    nav h1{
+        font-size: 16px;
+    }
+    Header{
+        width: 100%;
+        min-height: 50vh;
+        background-position: top left;
+    }
+    .text-box {
+        width: 50%;
+    }
     .text-box h1{
-        font-size: 20px;
+        font-size: 12px;
+    }
+    .text-box p{
+        font-size: 8px;
     }
     nav img{
         min-height: 100vh;
@@ -137,6 +151,59 @@ nav .fa-bars:hover{
         padding:30px;
     }
     .Login-btn,.Register-btn{
+        width: 100px;
+        padding: 5px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px){
+    nav h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    Header{
+        width: 100%;
+        background-position: top left;
+    }
+    .text-box {
+        width: 60%;
+    }
+    .text-box h1{
+        font-size: 15px;
+    }
+    .text-box p{
+        font-size: 10px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        background-color: blue;
+        text-align: left;
+        top: 0;
+        right:-200px;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+    .Login-btn,.Register-btn{
+        width: 120px;
+        padding: 5px;
+        font-size: 15px;
         margin-top: 20px;
     }
 }
