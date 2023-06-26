@@ -1,0 +1,25 @@
+<section class="Header">
+    <nav>
+        <h1>Simple Rishta</h1>
+        <div *ngIf="navLinks" class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" (click)="hideMenu()"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">URDU</a></li>
+                <li><a href="#">ENGLISH</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" (click)="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Find Your Rishta Online</h1>
+        <p>Simple Rishta is an online matrimonial service that helps Pakistani families and couples searching for an online rishta. You can use the following section to filter suitable matches according to your preferences in real-time. You can then register or login to contact your preferred rishtas.</p>
+        <a href="#" class="Login-btn">Login</a>
+        <a href="#" class="Register-btn">Register</a>
+    </div>
+</section>
+

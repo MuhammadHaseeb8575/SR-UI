@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './Header/header/header.component';
+import { CardsComponent } from './Body/cards/cards.component';
+import { SideFormComponent } from './Body/side-form/side-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    CardsComponent,
+    SideFormComponent
   ],
   imports: [
     BrowserModule,
