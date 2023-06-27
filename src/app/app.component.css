@@ -33,9 +33,14 @@
     }
 }
 
-@media only screen and (min-width:768px) and (max-width:991px){
+@media only screen and (min-width:768px) and (max-width:1200px){
     .col-8 h1{
-        width: 70%;
+        width: 60%;
         font-size: 20px;
+    }
+
+    .col-4,.col-8{
+        width: 100%;
+        display: block;
     }
 }

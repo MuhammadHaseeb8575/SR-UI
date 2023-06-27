@@ -4,11 +4,12 @@
     width: 100%;
     background-image: url('Images/Background.png'),
     linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     position: relative;
+    background-attachment: scroll;
 }
 nav{
     background-color:transparent;
@@ -102,21 +103,21 @@ nav .fa-bars:hover{
 
 @media only screen and (min-width:320px) and (max-width:768px){
     nav h1{
-        font-size: 16px;
+        font-size: 18px;
+        margin-left: 25%;
     }
-    Header{
-        width: 100%;
-        min-height: 50vh;
-        background-position: top left;
+    nav .fa-bars{
+        font-size: 20px;
+        padding-right: 25%;
     }
     .text-box {
         width: 50%;
     }
     .text-box h1{
-        font-size: 12px;
+        font-size: 18px;
     }
     .text-box p{
-        font-size: 8px;
+        font-size: 10px;
     }
     nav img{
         min-height: 100vh;
@@ -158,23 +159,23 @@ nav .fa-bars:hover{
     }
 }
 
-@media only screen and (min-width:768px) and (max-width:992px){
+@media only screen and (min-width:768px) and (max-width:1200px){
     nav h1{
-        font-size: 20px;
-        text-align: center;
+        font-size: 25px;
+        margin-left: 20%;
     }
-    Header{
-        width: 100%;
-        background-position: top left;
+    nav .fa-bars{
+        font-size: 20px;
+        padding-right: 15%;
     }
     .text-box {
-        width: 60%;
+        width: 70%;
     }
     .text-box h1{
-        font-size: 15px;
+        font-size: 18px;
     }
     .text-box p{
-        font-size: 10px;
+        font-size: 14px;
     }
     .nav-links ul li{
         display: block;
@@ -201,7 +202,7 @@ nav .fa-bars:hover{
         padding:30px;
     }
     .Login-btn,.Register-btn{
-        width: 120px;
+        width: 150px;
         padding: 5px;
         font-size: 15px;
         margin-top: 20px;

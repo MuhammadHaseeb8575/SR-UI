@@ -124,19 +124,86 @@
     
 }
 
-@media only screen and (min-width:768px) and (max-width:991px){
+
+@media only screen and (min-width:768px) and (max-width:1200px){
+    .card-col{
+        width: 280px;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 12.5%;
+    }
     .card{
-        min-width: 250px;
-        max-width: 100%;
-        margin: 20px 10px;
+        width: 250px;
+        height: 300px;
+        margin: 5px auto;
+        padding: 0;
     }
 
     .upper-part{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
     }
     .card-img{
-        width: 80px;
+        width: 100px;
+        height: 80px;
+        margin: 10px;
+        margin-left: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    .upper-text{
+        width: 120px;
+        height: 80px;
+        padding: 12px;
+    }
+    .upper-text h3{
+        font-size: 14px;
+    }
+    .upper-text p{
+        font-size: 10px;
+    }
+    
+    .upper-text .btn{
+        font-size: 8px;
+        width: 85px;
+    }
+    
+    .lower-part{
+        width: 100%;
+        height: 100px;
+        padding:5px;
+    }
+    .lower-text{
+        width: 50%;
+    }
+    .lower-text span{
+        font-size: 8px;
+    }
+    .lower-text p{
+        font-size: 10px;
+    }
+
+}
+
+/* @media only screen and (min-width:991px) and (max-width:1200px){
+    .card-col{
+        width: 100%;
+        display: block;
+    }
+    .card{
+        min-width: 300px;
+        max-width: 50%;
+        height: 300px;
+    }
+
+    .upper-part{
+        width: 300px;
+        height: 140px;
+    }
+    .card-img{
+        width: 100px;
         height: 80px;
         margin: 10px;
         background-size: cover;
@@ -145,7 +212,8 @@
     }
 
     .upper-text{
-        width: 100px;
+        min-width: 120px;
+        max-width: 180px;
         height: 80px;
         padding: 12px;
     }
@@ -175,9 +243,8 @@
     .lower-text p{
         font-size: 10px;
     }
-    
-    
+
 }
 
 
-
+ */
