@@ -7,6 +7,9 @@ import { HeaderComponent } from './Header/header/header.component';
 import { CardsComponent } from './Body/cards/cards.component';
 import { SideFormComponent } from './Body/side-form/side-form.component';
 import { BlogComponent } from './blog/blog.component';
+import {MatSelectModule} from '@angular/material/select';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { BlogComponent } from './blog/blog.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatSelectModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

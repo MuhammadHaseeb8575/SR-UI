@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-form.component.css']
 })
 export class SideFormComponent {
+  selected = 'option2';
 
 }

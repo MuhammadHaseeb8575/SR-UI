@@ -1,210 +1,132 @@
-
-.Header {
-    min-height: 100vh;
+header{
     width: 100%;
-    background-image: url('Images/Background.png'),
-    linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
-    background-position: center center;
+    background-image: url("Images/Banner33.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    position: relative;
-    background-attachment: scroll;
+    background-position: center bottom 0;
 }
-nav{
-    background-color:transparent;
+.navbar{
+    position: fixed !important;
+    padding: 0px !important;
+    z-index: 10010;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: auto;
+    margin-top: 0px;
+    background-color: white !important;
+    transition: border .3s ease 0ms,background-color .3s ease 0ms,background-image .3s ease 0ms;
+}
+
+.navbar ul{
+    width: 100%;
     display: flex;
-    padding: 1% 4%;
-    justify-content: space-between;
     align-items: center;
 }
-nav img{
-    width: 150px;
-    height: 150px;
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 1rem;
 }
-nav h1{
-    color:white;
-    font-size: 30px;
-    border-bottom: double 4px #fff;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
-}
-.nav-links ul li{
-    list-style: none;
-    padding: 8px 12px;
-    display: inline-block;
-    position: relative;
-}
-.nav-links ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 15px;
-}
-.nav-links ul li::after{
-    content:' ';
-    width: 0%;
-    height: 2px;
-    background:  #d61d64;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-    width: 100%;
-}
-.text-box {
-    width: 90%;
-    color: #fff;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-}
-.text-box h1{
-    font-size: 62px;
-}
-.text-box p{
-    color: #fff;
-    font-size: 14px;
-    margin: 10px 0 40px;
-}
-.Login-btn,.Register-btn{
-    text-transform: uppercase;
-    width: 150px;
+.navbar ul li a{
     font-weight: bold;
+    color: #d61d64;
     text-decoration: none;
-    display: inline-block;
-    background-color:  #d61d64;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
+}
+.navbar-logo{
+    flex: 1;
+    font-size: 2rem;
+    color: #d61d64;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 4px double white;   
+    transition: .4s;
+}
+
+.main-container{
+    margin: auto;
+    width: 80%;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+
+.text-container{
+    width: 95%;
+    margin: auto;
+    padding: 2% 0;
     position: relative;
-    font-size: 13px;
-    /* background:transparent; */
-    cursor: pointer;
-    margin-right: 20px;
+    display: flex;
+    
+}
+.text{
+    width: 45%;
+    flex: 1;
+    padding: 15px;
+}
+.text h1{
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+.text p{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.Login-btn:hover,.Register-btn:hover{
-    color: #fff;
-    background-color: rgba(255, 0, 0, 0.61);
-    border: 1px solid red;
-    transition: 1s;
-}
-nav .fa-solid{
-    display: none;
-}
-nav .fa-bars:hover{
-    display: block;
+.video-img{
+    width: 55%;
+    padding: 20px;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px){
-    nav h1{
-        font-size: 18px;
-        margin-left: 25%;
+.img-container{
+    width: 100%;
+    height: 250px;
+    max-height: auto;
+    margin: auto;
+    background-image: url("Images/video-image.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    background-position: center;
+}
+
+.text a{
+    text-decoration: none;
+}
+.lgn-btn ,.rg-btn{
+    width: 150px;
+    background-color: white;
+    color: black;
+    margin:5px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rg-btn{
+    color: white;
+    background-color: blueviolet !important;
+}
+
+@media only screen and (max-width:991px) {
+    .navbar ul{
+        flex-wrap: wrap;
     }
-    nav .fa-bars{
-        font-size: 20px;
-        padding-right: 25%;
+
+    .text-container{
+        padding:2% 0;
+        flex-direction: column;        
     }
-    .text-box {
-        width: 50%;
-    }
-    .text-box h1{
-        font-size: 18px;
-    }
-    .text-box p{
-        font-size: 10px;
-    }
-    nav img{
-        min-height: 100vh;
+    .text,.video-img{
         width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-blend-mode: multiply;
-        position: relative;
     }
-    .nav-links ul li{
-        display: block;
+    .img-container{
+        height: 300px;
     }
-    .nav-links{
-        width: 200px;
-        height: 100vh;
-        position: absolute;
-        background-color: blue;
-        text-align: left;
-        top: 0;
-        right:-200px;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa-solid{
-        display: block;
-        margin: 10px;
-        font-size: 22px;
-        color: #fff;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding:30px;
-    }
-    .Login-btn,.Register-btn{
-        width: 100px;
-        padding: 5px;
-        font-size: 12px;
-        margin-top: 20px;
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:1200px){
-    nav h1{
-        font-size: 25px;
-        margin-left: 20%;
-    }
-    nav .fa-bars{
-        font-size: 20px;
-        padding-right: 15%;
-    }
-    .text-box {
-        width: 70%;
-    }
-    .text-box h1{
-        font-size: 18px;
-    }
-    .text-box p{
-        font-size: 14px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        width: 200px;
-        height: 100vh;
-        position: absolute;
-        background-color: blue;
-        text-align: left;
-        top: 0;
-        right:-200px;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa-solid{
-        display: block;
-        margin: 10px;
-        font-size: 22px;
-        color: #fff;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding:30px;
-    }
-    .Login-btn,.Register-btn{
-        width: 150px;
-        padding: 5px;
-        font-size: 15px;
-        margin-top: 20px;
-    }
+    
 }

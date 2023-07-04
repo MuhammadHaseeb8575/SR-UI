@@ -1,27 +1,50 @@
+.cards-container2{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    justify-content: space-between;
+    
+}
+
+h2{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+
 .card{
-    width: 400px;
-    height: 400px;
-    margin: 20px;
+    width: 48%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column !important;
     background-color: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
 
 }
 .upper-part{
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
 }
 .card-img{
-    width: 120px;
+    width: 40%;
     height: 120px;
     margin: 20px;
     background-image: url("Images/card-image.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
     
 }
 .upper-text{
+    width: 60%;
     padding: 20px;
-    height: 200px;
 }
 .upper-text h3{
     font-size: 20px;
@@ -38,7 +61,7 @@
 .upper-text .btn{
     font-size: 16px;
     color: white;
-    width: 150px;
+    width: 80%;
     background-color: #d61d64;
     text-transform: uppercase;
     border-radius: none;
@@ -53,198 +76,65 @@
 
 .lower-part{
     width: 100%;
-    height: 150px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
     padding:10px;
+    justify-content: space-between;
 }
 .lower-text{
+    width: 48%;
     padding: 10px;
 }
 .lower-text span{
     margin: 0 10px;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px){
-    .card-col{
-        width: 100%;
-        display: block;
-    }
-    .card{
-        min-width: 200px;
-        max-width: 100%;
-        height: 300px;
-        margin: 20px auto;
-    }
-
-    .upper-part{
-        width: 200px;
-        height: 140px;
-    }
-    .card-img{
-        width: 80px;
-        height: 80px;
-        margin: 10px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-    }
-
-    .upper-text{
-        min-width: 100px;
-        max-width: 150px;
-        height: 80px;
-        padding: 12px;
-    }
+@media only screen and (min-width:768px) and (max-width:991px){
     .upper-text h3{
-        font-size: 14px;
+        font-size: 16px;
     }
     .upper-text p{
-        font-size: 10px;
+        font-size: 12px;
     }
-    
+    .upper-text a{
+        text-decoration: none;
+    }
     .upper-text .btn{
         font-size: 8px;
-        width: 85px;
-    }
-    
-    .lower-part{
-        width: 100%;
-        height: 150px;
-        padding:5px;
-    }
-    .lower-text{
-        width: 50%;
-    }
-    .lower-text span{
-        font-size: 8px;
-    }
-    .lower-text p{
-        font-size: 10px;
-    }
-    
-    
-}
-
-
-@media only screen and (min-width:768px) and (max-width:1200px){
-    .card-col{
-        width: 280px;
-        margin: 0px;
-        padding: 0px;
-        padding-left: 12.5%;
-    }
-    .card{
-        width: 250px;
-        height: 300px;
-        margin: 5px auto;
-        padding: 0;
-    }
-
-    .upper-part{
-        width: 250px;
-        height: 150px;
-    }
-    .card-img{
-        width: 100px;
-        height: 80px;
-        margin: 10px;
-        margin-left: 15px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-    }
-
-    .upper-text{
-        width: 120px;
-        height: 80px;
-        padding: 12px;
-    }
-    .upper-text h3{
-        font-size: 14px;
-    }
-    .upper-text p{
-        font-size: 10px;
-    }
-    
-    .upper-text .btn{
-        font-size: 8px;
-        width: 85px;
-    }
-    
-    .lower-part{
-        width: 100%;
-        height: 100px;
-        padding:5px;
-    }
-    .lower-text{
-        width: 50%;
-    }
-    .lower-text span{
-        font-size: 8px;
-    }
-    .lower-text p{
-        font-size: 10px;
-    }
-
-}
-
-/* @media only screen and (min-width:991px) and (max-width:1200px){
-    .card-col{
-        width: 100%;
-        display: block;
-    }
-    .card{
-        min-width: 300px;
-        max-width: 50%;
-        height: 300px;
-    }
-
-    .upper-part{
-        width: 300px;
-        height: 140px;
-    }
-    .card-img{
-        width: 100px;
-        height: 80px;
-        margin: 10px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-    }
-
-    .upper-text{
-        min-width: 120px;
-        max-width: 180px;
-        height: 80px;
-        padding: 12px;
-    }
-    .upper-text h3{
-        font-size: 14px;
-    }
-    .upper-text p{
-        font-size: 10px;
-    }
-    
-    .upper-text .btn{
-        font-size: 8px;
-        width: 85px;
-    }
-    
-    .lower-part{
-        width: 100%;
-        height: 150px;
-        padding:5px;
-    }
-    .lower-text{
-        width: 50%;
-    }
-    .lower-text span{
-        font-size: 8px;
-    }
-    .lower-text p{
-        font-size: 10px;
-    }
+    }  
 
 }
 
 
- */
+@media only screen and (max-width:768px){
+    .cards-container2{
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column !important;
+        align-items: center;
+        
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .upper-text h3{
+        font-size: 16px;
+    }
+    .upper-text p{
+        font-size: 12px;
+    }
+    .upper-text .btn{
+        font-size: 8px;
+    }
+    
+    .card-img{
+        width: 40%;
+        height: 160px;
+        margin: 20px;
+    }
+}

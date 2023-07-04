@@ -1,25 +1,32 @@
-<section class="Header">
-    <nav>
-        <h1>Simple Rishta</h1>
-        <div *ngIf="navLinks" class="nav-links" id="navLinks">
-            <i class="fa-solid fa-xmark" (click)="hideMenu()"></i>
+<header>
+    <div class="nav-container">
+        <nav class="navbar">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT US</a></li>
-                <li><a href="#">URDU</a></li>
-                <li><a href="#">ENGLISH</a></li>
+                <li class="navbar-logo">
+                    Simple Rishta
+                </li>
+                <li class="nav-links"><a href="">Home</a></li>
+                <li class="nav-links"><a href="">About</a></li>
+                <li class="nav-links"><a href="">FAQs</a></li>
+                <li class="nav-links"><a href="#">Blog</a></li>
+                <li class="nav-links"><a href="">Contact Us</a></li>
+                <li class="nav-links"><a href="">اردو</a></li>
+                <li class="nav-links"><a href="">English</a></li>
             </ul>
-        </div>
-        <i class="fa-solid fa-bars" (click)="showMenu()"></i>
-    </nav>
-    <div class="text-box">
-        <h1>Find Your Rishta Online</h1>
-        <p>Simple Rishta is an online matrimonial service that helps Pakistani families and couples searching for an online rishta. You can use the following section to filter suitable matches according to your preferences in real-time. You can then register or login to contact your preferred rishtas.</p>
-        <a href="#" class="Login-btn">Login</a>
-        <a href="#" class="Register-btn">Register</a>
+        </nav>
     </div>
-</section>
 
+    <div class="main-container">
+        <div class="text-container">
+            <div class="text">
+                <h1>Find Your Rishta Online</h1>
+                <p>Simple Rishta is an online matrimonial service that helps Pakistani families and couples searching for an online rishta. You can use the following section to filter suitable matches according to your preferences in real-time. You can then register or login to contact your preferred rishtas.</p>
+                <a href=""><button class="lgn-btn">Login</button></a>
+                <a href=""><button class="rg-btn">Register</button></a>
+            </div>
+            <div class="video-img">
+                 <div class="img-container"></div>
+            </div>
+        </div>
+    </div>
+</header>
